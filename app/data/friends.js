@@ -1,3 +1,9 @@
+var Friend = function(name, photo, scores) {
+  this.name = name,
+  this.photo = photo,
+  this.scores = scores
+};
+
 var friends = [
     {
     "name":"Ahmed",
@@ -15,4 +21,6 @@ var friends = [
         1
       ]
     }
-]
+];
+
+module.exports = friends;
