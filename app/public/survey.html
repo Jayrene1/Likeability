@@ -5,10 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Likeability - Home</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">  <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
 </head>
 <body>
-    <p>SURVEY</p>
+    <div class="container">
+        <div class="jumbotron text-center">
+          <h1><span class="far fa-thumbs-up"></span> Likeability</h1>
+          <h3>Survey Questions</h3>
+          <hr>
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">Profile Info</div>
 
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="image-url">Photo Link</label>
+                                <input type="text" class="form-control" id="image">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card text-center">
+                    <div class="card-header" id="question-int">Question 1</div>
+                    
+                    <div class="card-body">
+                        <h3 class="card-title" id="question-text">question text</h3>
+                        <button class="btn btn-info question-response" data-value="5">Super-Like</button>   
+                        <button class="btn btn-primary question-response" data-value="4">Like</button>   
+                        <button class="btn btn-success question-response" data-value="3">Medium</button>        
+                        <button class="btn btn-warning question-response" data-value="2">Dislike</button>        
+                        <button class="btn btn-danger question-response" data-value="1">Hate</button>             
+                        <br>
+                        <button class="btn btn-outline-dark m-5" id="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>    
     <script src="js/survey.js"></script>
 </body>
 </html>

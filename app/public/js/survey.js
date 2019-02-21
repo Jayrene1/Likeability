@@ -1,5 +1,15 @@
 $(document).ready(function() {
-    $("#confirm").on("click", function(event) {
+    var scores = [];
+    $(".question-response").on("click", function(event) {
+        event.preventDefault();
+        // string ---> console.log(typeof $(this).attr("data-value"));
+        // number ---> console.log(typeof $(this).data("value"));
+        scores.push($(this).data("value"));
+        console.log(scores);
+    });
+
+
+    $("#submit").on("click", function(event) {
         event.preventDefault();
     
         var newFriend = {
